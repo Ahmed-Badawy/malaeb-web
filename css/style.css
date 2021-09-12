@@ -34,6 +34,7 @@ body{
 .editNavbar .nav-item .nav-link.active{
     background:linear-gradient(0deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), #C2C9D1;
     color: #85C240;
+    padding: 0.5rem;
     border-radius: 8px;
 }
 .editNavbar .dropdown-toggle::after{
@@ -352,6 +353,10 @@ body{
     margin-bottom: 1rem;
     min-width: 15rem;
 }
+.form-check-input:checked{
+    background-color:#85C240;
+    border-color: #85C240;
+}
 .minCard{
     margin-right: 0.4rem;
     min-width: 8rem;
@@ -427,7 +432,7 @@ body{
     background-color: #41AD49;
 }
 .ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover{
-    background-color: blue;
+    background-color: #85C240;
     border: none;
 }
 .ui-datepicker .ui-datepicker-header{
@@ -440,6 +445,76 @@ body{
 }
 .editPicker .ui-widget.ui-widget-content{
     margin: auto;
+}
+.minSlot{
+    background-color: #eef1f5;
+    border-radius: 15px;
+    padding: 0.5rem;
+    height: 48px;
+}
+.minSlot span{
+    background-color: white;
+    width: 67%;
+    text-align: center;
+    display: inline-block;
+    border-radius: 15px;
+    padding: 0.2rem 5px 0.2rem 5px;
+}
+.dropdown-toggle::after {
+    display: inline-block;
+    margin-left: .255em;
+    vertical-align: .255em;
+    color: #41AD49;
+    content: "";
+    border-top: .3em solid;
+    border-right: .3em solid transparent;
+    border-bottom: 0;
+    border-left: .3em solid transparent;
+}
+.form-select:focus{
+    border: none;
+    box-shadow: none;
+}
+.swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet{
+    background-color: #41AD49;
+}
+.imgTag{
+    width: 63px;
+    height: 63px;
+}
+.bgPayment{
+    background-color: #f7f7f7;
+}
+.specialOffer{
+    border: 2px solid #87BE44;
+}
+.specialOffer p:first-child{
+    background-color: #F4AC45;
+    color: white;
+}
+.specialOfferLower{
+    border: 2px solid #87BE44;
+}
+.specialOfferLower p:first-child{
+    background-color: #41AD49;
+    color: white;
+}
+.newSpecial{
+    border: 1px solid #EBEEF2;
+}
+.newSpecial p:first-child{
+    background-color: #F4AC45;
+    color: white;
+}
+.form-control:focus{
+    box-shadow: none;
+}
+.minSpecial{
+    min-width: 7rem;
+}
+.specialOffer:focus, .btnTimeS:focus ,.specialOfferLower:focus ,
+.btnDay:focus , .btnTime:focus ,.newSpecial:focus{
+    box-shadow: 0 0 0 0.1rem rgb(71 198 7 / 61%);
 }
 /* ============================== */
 @media screen and (max-width:767px){
@@ -455,8 +530,8 @@ body{
         /* display: block; */
     }
     .jumbo{
-        margin-top: 4rem;
-        margin-bottom: 4rem
+        margin-top: 2rem;
+        margin-bottom: 2rem;
     }
     .textLg{
         font-size: 18px;
